@@ -1,0 +1,21 @@
+{
+    "name": "serz/store",
+    "description": "Application",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Tansky",
+            "email": "serzmerz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "serz/framework": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/var/www/myframe"
+        }
+    ]
+}
