@@ -10,7 +10,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "serz/framework": "dev-master"
+        "serz/framework": "dev-master",
+        "twig/twig": "~2.0"
     },
     "repositories": [
         {
