@@ -3,17 +3,22 @@
 
 namespace Controllers;
 
-use serz\Framework\Controller\Controller;
+use Mystore\Middleware\IsAdminMiddleware;
+use Mystore\Middleware\OldMiddleware;
+use Serz\Framework\Controller\Controller;
+use Serz\Framework\Middleware\MiddlewareRunner;
+use Serz\Framework\Request\Request;
 
 class IndexController extends Controller
 {
     public function index()
     {
-        $this->render('page.html', array("id" => "Index Page"));
+
+        return $this->render('page.html', array("id" => "Index Page"));
     }
 
     public function getProduct($id)
     {
-        $this->render('page.html', array("id" => $id));
+        return $this->render('page.html', array("id" => $id));
     }
 }
